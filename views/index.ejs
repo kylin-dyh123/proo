@@ -2,11 +2,80 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('head', {}); %>
+    <%- include('headd', {}); %>
+    <%- include('background', {}); %>
   </head>
+  <style>
+    .a1{
+      color: rgb(129, 178, 252);
+      font-size: 15px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 20px;
+    }
+  </style>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-   <h2>hello</h2> 
+   
+
+
+
+
+
+    
+<table class="layui-table" lay-skin="line">
+  <colgroup>
+    <col width="150">
+    <col width="200">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>序</th>
+      <th>新增资讯</th>
+      <th>加入时间</th>
+      <th>操作</th>
+    </tr> 
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>
+        <a  href="/xiangq">第一条资讯</a>
+      </td>
+      <td>2016-11-29</td>
+      <td>
+        <div class="layui-btn-group">
+          <a class="a1" href="/write">
+          删除</a>
+          <a  class="a1" href="/write">
+            编辑
+        </a>
+        </div>
+      </td>
+     
+    </tr>
+    
+
+    <tr>
+      <td>2</td>
+      <td>
+        <a href="/xiangq">第二条资讯</a>
+      </td>
+      <td>2016-11-28</td>
+      <td>
+        <div class="layui-btn-group">
+          <a class="a1" href="/write">
+            删除</a>
+            <a  class="a1" href="/write">
+            编辑
+          </a>
+          
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
   </body>
 </html>
